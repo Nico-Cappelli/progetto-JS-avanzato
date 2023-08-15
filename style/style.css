@@ -92,3 +92,7 @@ input, textarea{
     font-size: larger;
 
 }
+
+#score{
+    width: auto;
+}

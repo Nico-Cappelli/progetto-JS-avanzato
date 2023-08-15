@@ -10,7 +10,7 @@ scrivi.innerHTML = (infoFetch.summary);
 let scrive = document.getElementById("categories");
 scrive.innerHTML = (infoFetch.categories);
 let scrivo = document.getElementById("score");
-scrivo.innerHTML = (infoFetch.teleport_city_score);
+scrivo.innerHTML = ("Total Score: " + infoFetch.teleport_city_score);
    }
 
    ciao();
