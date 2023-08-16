@@ -9,8 +9,9 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
 .then(json=>{
  const infoFetch = json;
      
-    
-    function writeInfo(){
+ const btn = document.querySelector("#btn");
+  btn.addEventListener("click", function writeInfo(){
+   
         takeSum.innerHTML = (infoFetch.summary);
         let tc = infoFetch.teleport_city_score.toFixed(2);
         takeSco.innerHTML = ("Total Score: " + tc);
@@ -23,8 +24,7 @@ infoFetch.categories.forEach((x) => {
   });
   
 
-   }
-
+}) 
    writeInfo();
 });
 
