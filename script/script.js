@@ -18,9 +18,10 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
 infoFetch.categories.forEach((x) => {
     takeCat.insertAdjacentHTML(
       "afterbegin",
-      `${x.name}: ${x.score_out_of_10.toFixed(1)}<br>`
+      `${x.name}: ${x.score_out_of_10.toFixed(2)}<br>`
     );
   });
+  
 
    }
 

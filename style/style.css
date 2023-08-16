@@ -24,6 +24,12 @@ h1{
     align-items: center;
 }
 
+.searchDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .up{
     margin-top: 250px;
     display: flex;
