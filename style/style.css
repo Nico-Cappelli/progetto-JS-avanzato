@@ -86,6 +86,7 @@ input, textarea{
 }
 
 .parag{
+    display: none;
     font-family: 'Times New Roman', Times, serif;
     border: 2px grey solid;
     color: grey;
@@ -98,6 +99,7 @@ input, textarea{
     font-size: larger;
 
 }
+
 
 #score{
     width: auto;
