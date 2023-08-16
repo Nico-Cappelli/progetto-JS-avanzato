@@ -12,12 +12,13 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
     
     function writeInfo(){
         takeSum.innerHTML = (infoFetch.summary);
-        takeSco.innerHTML = ("Total Score: " + infoFetch.teleport_city_score);
+        let tc = infoFetch.teleport_city_score.toFixed(2);
+        takeSco.innerHTML = ("Total Score: " + tc);
 
 infoFetch.categories.forEach((x) => {
     takeCat.insertAdjacentHTML(
       "afterbegin",
-      `${x.name} : ${x.score_out_of_10.toFixed(1)}<br>`
+      `${x.name}: ${x.score_out_of_10.toFixed(1)}<br>`
     );
   });
 
