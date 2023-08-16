@@ -1,17 +1,28 @@
+
+let takeSum = document.getElementById("summary");
+let takeCat = document.getElementById("categories");
+let takeSco = document.getElementById("score");
+
+
 fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
 .then(response => response.json())
 .then(json=>{
-    infoFetch = json;
+ const infoFetch = json;
      
     
-    function ciao(){
-let scrivi = document.getElementById("summary");
-scrivi.innerHTML = (infoFetch.summary);
-let scrive = document.getElementById("categories");
-scrive.innerHTML = (infoFetch.categories);
-let scrivo = document.getElementById("score");
-scrivo.innerHTML = ("Total Score: " + infoFetch.teleport_city_score);
+    function writeInfo(){
+        takeSum.innerHTML = (infoFetch.summary);
+        takeSco.innerHTML = ("Total Score: " + infoFetch.teleport_city_score);
+
+infoFetch.categories.forEach((x) => {
+    takeCat.insertAdjacentHTML(
+      "afterbegin",
+      `${x.name} : ${x.score_out_of_10.toFixed(1)}<br>`
+    );
+  });
+
    }
 
-   ciao();
+   writeInfo();
 });
+
