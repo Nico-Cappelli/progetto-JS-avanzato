@@ -86,7 +86,6 @@ input, textarea{
 }
 
 .parag{
-    display: none;
     border: 2px grey solid;
     color: grey;
     background-color: aliceblue;
@@ -104,7 +103,7 @@ input, textarea{
     width: auto;
 }
 
-.cat{
+#categories{
     width: auto;   
 
 }
