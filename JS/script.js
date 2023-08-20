@@ -4,11 +4,11 @@ function create(divValue, element, clas, attribute)
   const contenitore = document.getElementById(divValue);
   const NEW_ELEMENT = document.createElement(element);
  
-NEW_ELEMENT.classList.add(clas);
-NEW_ELEMENT.id = (attribute);
-contenitore.appendChild(NEW_ELEMENT);
+  NEW_ELEMENT.classList.add(clas);
+  NEW_ELEMENT.id = (attribute);
+  contenitore.appendChild(NEW_ELEMENT);
 
-return NEW_ELEMENT;
+  return NEW_ELEMENT;
 };
 
 const btnC = document.querySelector("#btnCanc");
@@ -47,11 +47,11 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
 
 });
 });
-
-
 document.getElementById("btnCanc").onclick = function() {
   document.getElementById("summary").remove();
   document.getElementById("categories").remove();
   document.getElementById("score").remove();
 };
+
+
 
