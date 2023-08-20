@@ -1,6 +1,3 @@
-/*let takeSum = document.getElementById("summary");
-let takeCat = document.getElementById("categories");
-let takeSco = document.getElementById("score");*/
 
 function create(divValue, element, clas, attribute)
 {
@@ -29,12 +26,7 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
         const takeSum = create("bodyDiv", "div", "parag", "summary" );
         const takeCat = create("bodyDiv", "div", "parag", "categories" );
        const takeSco = create("bodyDiv", "div", "parag", "score" );
-      /*btn.addEventListener("click", function () {
-        takeSum.style.display = "block";
-        takeCat.style.display = "block";
-        takeSco.style.display = "block";
-
-       });*/
+      
 
 
      takeSum.innerHTML = (infoFetch.summary);
@@ -55,12 +47,7 @@ infoFetch.categories.forEach((x) => {
 
 });
 });
-/*btnC.addEventListener("click", function(){
-takeCat.remove();
-takeSco.remove();
-takeCat.remove();
-  
-});*/
+
 
 document.getElementById("btnCanc").onclick = function() {
   document.getElementById("summary").remove();
