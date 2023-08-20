@@ -25,7 +25,7 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
     if (inputVal == "Los Angeles") {
         const takeSum = create("bodyDiv", "div", "parag", "summary" );
         const takeCat = create("bodyDiv", "div", "parag", "categories" );
-       const takeSco = create("bodyDiv", "div", "parag", "score" );
+        const takeSco = create("bodyDiv", "div", "parag", "score" );
       
 
 
@@ -33,8 +33,8 @@ fetch('https://api.teleport.org/api/urban_areas/slug:los-angeles/scores/')
      let tc = infoFetch.teleport_city_score.toFixed(2);
      takeSco.innerHTML = ("Total Score: " + tc);
 
-infoFetch.categories.forEach((x) => {
- takeCat.insertAdjacentHTML("afterbegin",`${x.name}: ${x.score_out_of_10.toFixed(2)}<br>`);
+     infoFetch.categories.forEach((x) => {
+     takeCat.insertAdjacentHTML("afterbegin",`${x.name}: ${x.score_out_of_10.toFixed(2)}<br>`);
 });
       
       
