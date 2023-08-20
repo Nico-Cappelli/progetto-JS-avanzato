@@ -56,12 +56,18 @@ infoFetch.categories.forEach((x) => {
 
 });
 });
-btnC.addEventListener("click", function(){
+/*btnC.addEventListener("click", function(){
 takeCat.remove();
 takeSco.remove();
 takeCat.remove();
   
-});
+});*/
+
+document.getElementById("btnCanc").onclick = function() {
+  document.getElementById("summary").remove();
+  document.getElementById("categories").remove();
+  document.getElementById("score").remove();
+};
 
 
 
