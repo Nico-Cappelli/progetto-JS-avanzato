@@ -1,12 +1,12 @@
 
 function create(divValue, element, clas, attribute)
 {
-  const contenitore = document.getElementById(divValue);
+  const container = document.getElementById(divValue);
   const NEW_ELEMENT = document.createElement(element);
  
   NEW_ELEMENT.classList.add(clas);
   NEW_ELEMENT.id = (attribute);
-  contenitore.appendChild(NEW_ELEMENT);
+  container.appendChild(NEW_ELEMENT);
 
   return NEW_ELEMENT;
 };
